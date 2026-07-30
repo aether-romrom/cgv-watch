@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.log
+*.log.1
+.ntfy-topic
+# 맥에서 쓰는 스냅샷. Actions 는 state.actions.json 을 따로 쓴다.
+state.json
+state.json.tmp
+state.actions.json.tmp

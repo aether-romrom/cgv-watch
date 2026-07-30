@@ -1,0 +1,66 @@
+name: CGV 감시
+
+# GitHub Actions 는 최소 5분 간격이고, 정시 부근은 부하가 몰려 실행이 밀리거나
+# 통째로 누락될 수 있다. 그래서 정시를 피해 2분씩 밀어둔다.
+on:
+  schedule:
+    - cron: "2-57/5 * * * *"
+  workflow_dispatch:
+
+# state 파일을 레포에 다시 커밋해야 하므로 쓰기 권한이 필요하다.
+permissions:
+  contents: write
+
+# 앞 실행이 아직 안 끝났는데 다음 실행이 겹치면 state 커밋이 충돌한다.
+concurrency:
+  group: cgv-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Chromium 캐시 복원
+        id: pwcache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-chromium-${{ runner.os }}-v1
+
+      - name: 의존성 설치
+        run: |
+          pip install --quiet -r requirements.txt
+          if [ "${{ steps.pwcache.outputs.cache-hit }}" != "true" ]; then
+            python -m playwright install --with-deps chromium
+          else
+            python -m playwright install-deps chromium
+          fi
+
+      - name: 감시 실행
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          STATE_FILE: state.actions.json
+        run: python watch.py
+
+      - name: 스냅샷 저장
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain state.actions.json)" ]; then
+            git config user.name "cgv-watch bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add state.actions.json
+            git commit -m "state: $(date -u +%Y-%m-%dT%H:%MZ)"
+            # 5분 간격이라 그 사이 다른 실행이 push 했을 수 있다.
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && break
+              sleep 5
+            done
+          fi

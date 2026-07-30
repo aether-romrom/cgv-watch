@@ -1,0 +1,25 @@
+{
+  "_note": "알림 주소(NTFY_TOPIC)는 여기 두지 않는다. 맥은 launchd plist, GitHub Actions는 Secrets로 주입한다.",
+  "ntfy_server": "https://ntfy.sh",
+  "targets": [
+    {
+      "label": "오디세이 · 용산 IMAX",
+      "movNo": "30001323",
+      "movNm": "오디세이",
+      "siteNo": "0013",
+      "siteNm": "CGV 용산아이파크몰",
+      "screen_match": "IMAX",
+      "days_ahead": 30,
+      "lookahead_pad": 3
+    }
+  ],
+  "notify": {
+    "new_showtime": true,
+    "seats_freed": true,
+    "seats_freed_when_prev_at_or_below": 5,
+    "seats_freed_min_gain": 1,
+    "cooldown_seconds": 900
+  },
+  "full_scan_every_n_runs": 10,
+  "alert_after_consecutive_failures": 5
+}

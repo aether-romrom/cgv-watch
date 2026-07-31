@@ -116,6 +116,52 @@ def hhmm(t):
     return f"{h:02d}:{m}"
 
 
+WEEKDAY_KO = "월화수목금토일"
+
+
+def passes_filter(ymd, start, f):
+    """요일·시간대·날짜 범위로 알림 대상을 좁힌다. 비어 있는 항목은 제한 없음."""
+    if not f:
+        return True
+
+    try:
+        d = datetime.strptime(ymd, "%Y%m%d").date()
+    except ValueError:
+        return True
+
+    days = f.get("weekdays") or []
+    if days and WEEKDAY_KO[d.weekday()] not in days:
+        return False
+
+    if f.get("date_from") and ymd < f["date_from"]:
+        return False
+    if f.get("date_to") and ymd > f["date_to"]:
+        return False
+
+    # CGV는 심야를 '2500'(=익일 01:00)처럼 24를 넘겨서 준다.
+    # 그래서 문자열을 4자리로 맞추면 그대로 크기 비교가 된다.
+    s = (start or "").zfill(4)
+    if f.get("time_from") and s < f["time_from"].zfill(4):
+        return False
+    if f.get("time_to") and s > f["time_to"].zfill(4):
+        return False
+
+    return True
+
+
+def describe_filter(f):
+    if not f:
+        return "제한 없음"
+    parts = []
+    if f.get("weekdays"):
+        parts.append("".join(f["weekdays"]) + "요일")
+    if f.get("time_from") or f.get("time_to"):
+        parts.append(f"{hhmm(f.get('time_from') or '0000')}~{hhmm(f.get('time_to') or '2959')}")
+    if f.get("date_from") or f.get("date_to"):
+        parts.append(f"{f.get('date_from') or '처음'}~{f.get('date_to') or '끝'}")
+    return " / ".join(parts) if parts else "제한 없음"
+
+
 def ymd_label(ymd):
     try:
         d = datetime.strptime(ymd, "%Y%m%d").date()
@@ -177,6 +223,7 @@ def run_target(page, cfg, state, target):
     site = target["siteNo"]
     mov = target["movNo"]
     match = (target.get("screen_match") or "").upper()
+    filt = target.get("filter") or {}
     days_ahead = int(target.get("days_ahead", 30))
     pad = int(target.get("lookahead_pad", 3))
 
@@ -194,7 +241,10 @@ def run_target(page, cfg, state, target):
     ymds = pick_dates(
         {k.split("_", 1)[0] for k in prev}, today, days_ahead, pad, full_scan
     )
-    log(f"[{label}] {'전체' if full_scan else '증분'} 스캔 {len(ymds)}일 ({ymds[0]}~{ymds[-1]})")
+    log(
+        f"[{label}] {'전체' if full_scan else '증분'} 스캔 {len(ymds)}일 "
+        f"({ymds[0]}~{ymds[-1]}) / 조건: {describe_filter(filt)}"
+    )
 
     result = fetch_schedules(page, site, mov, ymds)
 
@@ -227,6 +277,9 @@ def run_target(page, cfg, state, target):
         for s in entry["rows"]:
             screen = s.get("expoScnsNm") or s.get("scnsNm") or ""
             if match and match not in (s.get("scnsNm", "") + " " + screen + " " + (s.get("fmt") or "")).upper():
+                continue
+
+            if not passes_filter(ymd, s["start"], filt):
                 continue
 
             k = f"{ymd}_{s['scnsNo']}_{s['start']}"

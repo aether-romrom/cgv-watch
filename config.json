@@ -10,7 +10,14 @@
       "siteNm": "CGV 용산아이파크몰",
       "screen_match": "IMAX",
       "days_ahead": 30,
-      "lookahead_pad": 3
+      "lookahead_pad": 3,
+      "filter": {
+        "weekdays": [],
+        "time_from": "",
+        "time_to": "",
+        "date_from": "",
+        "date_to": ""
+      }
     }
   ],
   "notify": {

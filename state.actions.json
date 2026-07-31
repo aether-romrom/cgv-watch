@@ -112,7 +112,7 @@
         "last_notified": 0
       },
       "20260806_018_2400": {
-        "free": 11,
+        "free": 10,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -362,7 +362,7 @@
         "last_notified": 0
       },
       "20260811_018_0630": {
-        "free": 73,
+        "free": 71,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -382,7 +382,7 @@
         "last_notified": 0
       },
       "20260811_018_1330": {
-        "free": 33,
+        "free": 32,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -522,7 +522,7 @@
         "last_notified": 0
       },
       "20260813_018_2030": {
-        "free": 41,
+        "free": 39,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -592,7 +592,7 @@
         "last_notified": 0
       },
       "20260814_018_2500": {
-        "free": 60,
+        "free": 59,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -612,7 +612,7 @@
         "last_notified": 0
       },
       "20260815_018_1100": {
-        "free": 18,
+        "free": 19,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -662,7 +662,7 @@
         "last_notified": 0
       },
       "20260816_018_0730": {
-        "free": 29,
+        "free": 31,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -742,7 +742,7 @@
         "last_notified": 0
       },
       "20260817_018_1330": {
-        "free": 26,
+        "free": 25,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -780,6 +780,26 @@
         "movNm": "오디세이",
         "siteNm": "CGV 용산아이파크몰",
         "last_notified": 0
+      },
+      "20260818_018_0630": {
+        "free": 84,
+        "total": 624,
+        "screen": "IMAX관",
+        "fmt": "IMAX LASER 2D",
+        "start": "0630",
+        "movNm": "오디세이",
+        "siteNm": "CGV 용산아이파크몰",
+        "last_notified": 1785471828
+      },
+      "20260818_018_1000": {
+        "free": 50,
+        "total": 624,
+        "screen": "IMAX관",
+        "fmt": "IMAX LASER 2D",
+        "start": "1000",
+        "movNm": "오디세이",
+        "siteNm": "CGV 용산아이파크몰",
+        "last_notified": 1785471828
       },
       "20260818_018_1330": {
         "free": 49,
@@ -823,7 +843,7 @@
       }
     }
   },
-  "runs": 1,
+  "runs": 2,
   "consecutive_failures": 0,
-  "last_ok": "2026-07-31T13:21:59+09:00"
+  "last_ok": "2026-07-31T13:23:48+09:00"
 }

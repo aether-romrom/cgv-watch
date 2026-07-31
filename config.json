@@ -16,9 +16,9 @@
   "notify": {
     "new_showtime": true,
     "seats_freed": true,
-    "seats_freed_when_prev_at_or_below": 5,
+    "seats_freed_when_prev_at_or_below": 20,
     "seats_freed_min_gain": 1,
-    "cooldown_seconds": 900
+    "cooldown_seconds": 300
   },
   "full_scan_every_n_runs": 10,
   "alert_after_consecutive_failures": 5

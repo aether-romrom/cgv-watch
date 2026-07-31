@@ -12,7 +12,7 @@
         "last_notified": 0
       },
       "20260805_018_1000": {
-        "free": 2,
+        "free": 1,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -62,14 +62,14 @@
         "last_notified": 0
       },
       "20260806_018_0630": {
-        "free": 7,
+        "free": 8,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
         "start": "0630",
         "movNm": "오디세이",
         "siteNm": "CGV 용산아이파크몰",
-        "last_notified": 0
+        "last_notified": 1785498653
       },
       "20260806_018_1000": {
         "free": 6,
@@ -112,27 +112,27 @@
         "last_notified": 0
       },
       "20260806_018_2400": {
-        "free": 10,
+        "free": 14,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
         "start": "2400",
         "movNm": "오디세이",
         "siteNm": "CGV 용산아이파크몰",
-        "last_notified": 0
+        "last_notified": 1785498653
       },
       "20260807_018_0730": {
-        "free": 6,
+        "free": 7,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
         "start": "0730",
         "movNm": "오디세이",
         "siteNm": "CGV 용산아이파크몰",
-        "last_notified": 0
+        "last_notified": 1785498653
       },
       "20260807_018_1100": {
-        "free": 8,
+        "free": 6,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -172,7 +172,7 @@
         "last_notified": 0
       },
       "20260807_018_2500": {
-        "free": 9,
+        "free": 8,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -232,7 +232,7 @@
         "last_notified": 0
       },
       "20260808_018_2500": {
-        "free": 10,
+        "free": 7,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -252,7 +252,7 @@
         "last_notified": 0
       },
       "20260809_018_1000": {
-        "free": 6,
+        "free": 5,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -292,7 +292,7 @@
         "last_notified": 0
       },
       "20260809_018_2400": {
-        "free": 36,
+        "free": 33,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -302,7 +302,7 @@
         "last_notified": 0
       },
       "20260810_018_0630": {
-        "free": 60,
+        "free": 56,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -312,7 +312,7 @@
         "last_notified": 0
       },
       "20260810_018_1000": {
-        "free": 21,
+        "free": 22,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -322,17 +322,17 @@
         "last_notified": 0
       },
       "20260810_018_1330": {
-        "free": 15,
+        "free": 17,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
         "start": "1330",
         "movNm": "오디세이",
         "siteNm": "CGV 용산아이파크몰",
-        "last_notified": 0
+        "last_notified": 1785498653
       },
       "20260810_018_1700": {
-        "free": 33,
+        "free": 20,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -342,7 +342,7 @@
         "last_notified": 0
       },
       "20260810_018_2030": {
-        "free": 26,
+        "free": 25,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -352,7 +352,7 @@
         "last_notified": 0
       },
       "20260810_018_2400": {
-        "free": 62,
+        "free": 63,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -362,7 +362,7 @@
         "last_notified": 0
       },
       "20260811_018_0630": {
-        "free": 71,
+        "free": 73,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -372,7 +372,7 @@
         "last_notified": 0
       },
       "20260811_018_1000": {
-        "free": 37,
+        "free": 28,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -382,7 +382,7 @@
         "last_notified": 0
       },
       "20260811_018_1330": {
-        "free": 32,
+        "free": 24,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -392,7 +392,7 @@
         "last_notified": 0
       },
       "20260811_018_1700": {
-        "free": 35,
+        "free": 33,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -422,7 +422,7 @@
         "last_notified": 0
       },
       "20260812_018_0630": {
-        "free": 78,
+        "free": 74,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -432,7 +432,7 @@
         "last_notified": 0
       },
       "20260812_018_1000": {
-        "free": 40,
+        "free": 39,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -442,7 +442,7 @@
         "last_notified": 0
       },
       "20260812_018_1330": {
-        "free": 33,
+        "free": 31,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -462,7 +462,7 @@
         "last_notified": 0
       },
       "20260812_018_2030": {
-        "free": 34,
+        "free": 30,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -472,7 +472,7 @@
         "last_notified": 0
       },
       "20260812_018_2400": {
-        "free": 90,
+        "free": 79,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -482,7 +482,7 @@
         "last_notified": 0
       },
       "20260813_018_0630": {
-        "free": 85,
+        "free": 79,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -492,7 +492,7 @@
         "last_notified": 0
       },
       "20260813_018_1000": {
-        "free": 45,
+        "free": 37,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -502,7 +502,7 @@
         "last_notified": 0
       },
       "20260813_018_1330": {
-        "free": 37,
+        "free": 39,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -512,7 +512,7 @@
         "last_notified": 0
       },
       "20260813_018_1700": {
-        "free": 39,
+        "free": 41,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -522,7 +522,7 @@
         "last_notified": 0
       },
       "20260813_018_2030": {
-        "free": 39,
+        "free": 35,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -532,7 +532,7 @@
         "last_notified": 0
       },
       "20260813_018_2400": {
-        "free": 88,
+        "free": 73,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -542,7 +542,7 @@
         "last_notified": 0
       },
       "20260814_018_0730": {
-        "free": 60,
+        "free": 56,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -552,7 +552,7 @@
         "last_notified": 0
       },
       "20260814_018_1100": {
-        "free": 38,
+        "free": 31,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -562,7 +562,7 @@
         "last_notified": 0
       },
       "20260814_018_1430": {
-        "free": 20,
+        "free": 18,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -582,7 +582,7 @@
         "last_notified": 0
       },
       "20260814_018_2130": {
-        "free": 24,
+        "free": 27,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -592,7 +592,7 @@
         "last_notified": 0
       },
       "20260814_018_2500": {
-        "free": 59,
+        "free": 54,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -612,7 +612,7 @@
         "last_notified": 0
       },
       "20260815_018_1100": {
-        "free": 19,
+        "free": 15,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -622,7 +622,7 @@
         "last_notified": 0
       },
       "20260815_018_1430": {
-        "free": 7,
+        "free": 6,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -632,7 +632,7 @@
         "last_notified": 0
       },
       "20260815_018_1800": {
-        "free": 21,
+        "free": 18,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -642,7 +642,7 @@
         "last_notified": 0
       },
       "20260815_018_2130": {
-        "free": 16,
+        "free": 13,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -652,7 +652,7 @@
         "last_notified": 0
       },
       "20260815_018_2500": {
-        "free": 56,
+        "free": 49,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -662,7 +662,7 @@
         "last_notified": 0
       },
       "20260816_018_0730": {
-        "free": 31,
+        "free": 28,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -672,7 +672,7 @@
         "last_notified": 0
       },
       "20260816_018_1100": {
-        "free": 21,
+        "free": 16,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -702,7 +702,7 @@
         "last_notified": 0
       },
       "20260816_018_2130": {
-        "free": 25,
+        "free": 27,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -722,7 +722,7 @@
         "last_notified": 0
       },
       "20260817_018_0630": {
-        "free": 47,
+        "free": 43,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -732,7 +732,7 @@
         "last_notified": 0
       },
       "20260817_018_1000": {
-        "free": 11,
+        "free": 6,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -752,7 +752,7 @@
         "last_notified": 0
       },
       "20260817_018_1700": {
-        "free": 30,
+        "free": 32,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -762,7 +762,7 @@
         "last_notified": 0
       },
       "20260817_018_2030": {
-        "free": 40,
+        "free": 38,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -772,7 +772,7 @@
         "last_notified": 0
       },
       "20260817_018_2400": {
-        "free": 86,
+        "free": 59,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -782,7 +782,7 @@
         "last_notified": 0
       },
       "20260818_018_0630": {
-        "free": 84,
+        "free": 80,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -792,7 +792,7 @@
         "last_notified": 1785471828
       },
       "20260818_018_1000": {
-        "free": 50,
+        "free": 48,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -802,7 +802,7 @@
         "last_notified": 1785471828
       },
       "20260818_018_1330": {
-        "free": 49,
+        "free": 44,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -812,7 +812,7 @@
         "last_notified": 0
       },
       "20260818_018_1700": {
-        "free": 49,
+        "free": 42,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -822,7 +822,7 @@
         "last_notified": 0
       },
       "20260818_018_2030": {
-        "free": 43,
+        "free": 39,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -832,7 +832,7 @@
         "last_notified": 0
       },
       "20260818_018_2400": {
-        "free": 57,
+        "free": 28,
         "total": 624,
         "screen": "IMAX관",
         "fmt": "IMAX LASER 2D",
@@ -843,7 +843,7 @@
       }
     }
   },
-  "runs": 2,
+  "runs": 3,
   "consecutive_failures": 0,
-  "last_ok": "2026-07-31T13:23:48+09:00"
+  "last_ok": "2026-07-31T20:50:53+09:00"
 }

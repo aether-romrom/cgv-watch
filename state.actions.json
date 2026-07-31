@@ -781,26 +781,6 @@
         "siteNm": "CGV 용산아이파크몰",
         "last_notified": 0
       },
-      "20260818_018_0630": {
-        "free": 84,
-        "total": 624,
-        "screen": "IMAX관",
-        "fmt": "IMAX LASER 2D",
-        "start": "0630",
-        "movNm": "오디세이",
-        "siteNm": "CGV 용산아이파크몰",
-        "last_notified": 0
-      },
-      "20260818_018_1000": {
-        "free": 50,
-        "total": 624,
-        "screen": "IMAX관",
-        "fmt": "IMAX LASER 2D",
-        "start": "1000",
-        "movNm": "오디세이",
-        "siteNm": "CGV 용산아이파크몰",
-        "last_notified": 0
-      },
       "20260818_018_1330": {
         "free": 49,
         "total": 624,

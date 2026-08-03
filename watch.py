@@ -120,7 +120,21 @@ WEEKDAY_KO = "월화수목금토일"
 
 
 def passes_filter(ymd, start, f):
-    """요일·시간대·날짜 범위로 알림 대상을 좁힌다. 비어 있는 항목은 제한 없음."""
+    """알림 대상을 좁힌다.
+
+    `rules` 가 있으면 그중 하나라도 맞으면 통과(OR)한다.
+    "주말은 종일, 평일은 저녁만" 처럼 요일마다 시간이 다른 조건을 쓰기 위한 것.
+    """
+    if not f:
+        return True
+    rules = f.get("rules")
+    if rules:
+        return any(_match_rule(ymd, start, r) for r in rules)
+    return _match_rule(ymd, start, f)
+
+
+def _match_rule(ymd, start, f):
+    """규칙 하나를 검사한다. 비어 있는 항목은 제한 없음."""
     if not f:
         return True
 
@@ -150,6 +164,14 @@ def passes_filter(ymd, start, f):
 
 
 def describe_filter(f):
+    if not f:
+        return "제한 없음"
+    if f.get("rules"):
+        return " 또는 ".join(_describe_rule(r) for r in f["rules"])
+    return _describe_rule(f)
+
+
+def _describe_rule(f):
     if not f:
         return "제한 없음"
     parts = []

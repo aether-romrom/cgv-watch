@@ -844,7 +844,7 @@
     }
   },
   "runs": 3,
-  "consecutive_failures": 17,
+  "consecutive_failures": 18,
   "last_ok": "2026-07-31T20:50:53+09:00",
   "last_error": "Error: BrowserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
 }
